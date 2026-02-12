@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michellin's Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+        <img src="pic/Logo_revou.png" width="50">
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="#">Our Profile</a>
+      <a href="#">Portofolio</a>
+      <a href="#message">Message Us</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 id="welcome">Hi, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <img src="pic/foto.jpeg" width="400" height="250">
+  </section>
+
+  <hr>
+
+  <!-- HQ -->
+  <section class="hq">
+    <h2>Our Headquarter</h2>
+
+    <div class="hq-list">
+      <div class="hq-item">
+        <div class="circle"></div>
+        <span>Jakarta</span>
+      </div>
+
+      <div class="hq-item">
+        <div class="circle"></div>
+        <span>Bandung</span>
+      </div>
+
+      <div class="hq-item">
+        <div class="circle"></div>
+        <span>Surabaya</span>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- MESSAGE -->
+  <section class="message" id="message">
+    <h2>Message Us</h2>
+
+    <div class="message-wrap">
+      <form id="messageForm">
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text" id="name" placeholder="Nama">
+        </div>
+
+        <div class="form-group">
+          <label>Tanggal Lahir</label>
+          <input type="date" id="birth">
+        </div>
+
+        <div class="form-group">
+          <label>Jenis Kelamin</label>
+          <div class="radio">
+            <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea id="msg" placeholder="Pesan"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="result">
+        <p><b>Current time</b> : <span id="time"></span></p>
+        <p><b>Nama</b> : <span id="rName"></span></p>
+        <p><b>Tanggal Lahir</b> : <span id="rBirth"></span></p>
+        <p><b>Jenis Kelamin</b> : <span id="rGender"></span></p>
+        <p><b>Pesan</b> : <span id="rMsg"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Created by Michellin <br> February 2026
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
